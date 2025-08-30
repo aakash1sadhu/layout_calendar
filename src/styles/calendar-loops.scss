@@ -7,8 +7,10 @@
 }
 
 @for $i from 28 through 31 {
-  .calendar--month-length-#{$i} .calendar__day:nth-child(n + #{$i + 1 }) {
-    display: none;
+  .calendar--month-length-#{$i} {
+    .calendar__day:nth-child(n + #{$i + 1 }) {
+      display: none;
+    }
   }
 }
 
